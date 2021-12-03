@@ -1,15 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;700&display=swap");
-body {
-  font-family: 'Barlow', sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-/*
-* data-color
-*/
 .navbar {
   -webkit-transition: .3s;
   transition: .3s;
@@ -92,47 +81,30 @@ a {
   color: rgba(0, 0, 0, 0.7);
 }
 
-header {
-  background: url(https://cdn.pixabay.com/photo/2018/07/15/13/04/living-room-3539586_1280.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-blend-mode: darken;
-  background-color: rgba(0, 0, 0, 0.7);
-  height: 100vh;
-  position: relative;
-}
-
-header .header-container {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 100%;
-  color: white;
-}
-
-header .header-container h1 {
-  font-weight: 400;
-  font-size: 3rem;
-}
-
-header .header-container .header-numbers span {
-  opacity: .2;
-  padding-left: 5px;
-}
-
-header .header-container .header-numbers h2 {
-  font-weight: 700;
-}
-
+/*===================================
+*   Button Style
+====================================*/
 .btn {
   border-radius: 0;
   cursor: pointer;
 }
 
-input, select, button {
-  outline: none;
+/* Wave effect */
+.wave {
+  background-position: center;
+  -webkit-transition: background 0.8s;
+  transition: background 0.8s;
+}
+
+.wave:hover {
+  background: #111111 radial-gradient(circle, transparent 1%, #333333 1%) center/15000%;
+}
+
+.wave:active {
+  background-color: #111111;
+  background-size: 100%;
+  -webkit-transition: background 0s;
+  transition: background 0s;
 }
 
 /** Search Form **/
@@ -168,6 +140,58 @@ input, select, button {
 
 .search-input .btn {
   width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  .search {
+    margin-top: -50px;
+  }
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+input, select, button {
+  outline: none;
+}
+
+header {
+  background: url(https://cdn.pixabay.com/photo/2018/07/15/13/04/living-room-3539586_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  position: relative;
+}
+
+header .header-container {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  color: white;
+}
+
+header .header-container h1 {
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+header .header-container .header-numbers span {
+  opacity: .2;
+  padding-left: 5px;
+}
+
+header .header-container .header-numbers h2 {
+  font-weight: 700;
 }
 
 #about {
@@ -387,9 +411,6 @@ footer .footer-copyright {
 }
 
 @media screen and (min-width: 900px) {
-  .search {
-    margin-top: -50px;
-  }
   .footer .footer-lists {
     margin-left: -40px;
   }

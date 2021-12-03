@@ -1,0 +1,26 @@
+/*===================================
+*   Button Style
+====================================*/
+
+.btn {
+    border-radius: 0;
+    cursor: pointer;
+}
+
+/* Wave effect */
+.wave {
+    background-position: center;
+    transition: background 0.8s;
+  }
+  .wave:hover {
+    background: #111111 radial-gradient(circle, transparent 1%, #333333 1%) center/15000%;
+    
+  }
+  .wave:active {
+    background-color: #111111;
+    background-size: 100%;
+    transition: background 0s;
+    
+  }
+
+ 

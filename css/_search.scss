@@ -1,0 +1,39 @@
+/** Search Form **/
+
+.search-section {
+    background-color: rgba(0,0,0,.025);
+}
+.search {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem 1rem;
+    position: relative;
+}
+
+    .search-input {
+        
+        position: relative;
+        margin-bottom: 1rem;
+        .form-control {
+            border-radius: 0;
+        }
+        
+        .input-icon {
+            position: absolute;
+            right: 15px;
+            top:50%;
+            transform: translateY(-50% );
+            pointer-events: none;
+        }
+        .btn {
+            width: 100%;
+        }
+    }
+    @media screen and (min-width: 900px) {
+
+        .search {
+            margin-top: -50px;
+        }
+
+    }
